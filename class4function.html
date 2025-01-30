@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    // function is a block of code which can be reused again and again
+
+    // syntax
+    //  define function
+    // function function-name{
+    //     .......code....
+    // }
+     
+
+    // call function
+    // function-name()
+
+    function hello(){
+        document.write('hello world <br>')
+    }
+    hello()
+    
+
+    let x = 10
+    let y = 5
+    let a = 15
+    let b = 20
+
+    // function with parameter
+    function add(a,b){ // parameter
+        document.write(a+b, '<br>')
+    }
+    add(x,a)  // arguments
+    add(x,b)
+    add(y,a)
+    add(y,b, '<br>')
+
+
+   
+    // document.write(x+y, '<br>')
+    // document.write(a+b)
+
+
+    // return type function
+    function per(a,b){
+        let total = a+b
+        let per = total/2*100
+
+        return per
+        
+    }
+    
+    document.write(per(1,1), '%', '<br>')
+
+    // recursive function - function that call itself
+    function factorial(n){
+        if(n==1){
+            return 1
+        } else{
+            return n*factorial(n-1)
+        }
+    }
+
+    document.write(`${factorial(5)}`)
+   </script> 
+</body>
+</html>
