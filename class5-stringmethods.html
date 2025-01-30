@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string methods</title>
+</head>
+<body>
+    <script>
+        let demo = 'we are reading javascript. javascript is used to interactive the web pages as well as javascript is used in react'
+
+        document.write(`${demo} <br>`)
+        document.write(`${typeof(demo)} <br>`)
+        // accessing the string
+        document.write(`${demo[1]} <br>`)
+        // length
+        document.write(`${demo.length} <br>`)
+        // for uppercase
+        document.write(`${demo.toUpperCase()} <br>`)
+        // for lowercase
+        document.write(`${demo.toLowerCase()} <br>`)
+        // to know the index of value
+        document.write(`${demo.indexOf('javascript')} <br>`)
+       // to know the last index of value
+        document.write(`${demo.lastIndexOf('javascript')} <br>`)
+        // to replace the value
+        document.write(`${demo.replace('javascript', 'js')} <br>`)
+         // to replace all the value
+         document.write(`${demo.replaceAll('javascript', 'js')} <br>`)
+         // split
+         document.write(`${demo.split('javascript')} <br>`)
+         // slice
+         document.write(`${demo.slice(5,30)} <br>`)
+        // search
+        document.write(`${demo.search('react')} <br>`)
+          // include
+        document.write(`${demo.includes('react')} <br>`)
+
+         let text = '    helllo world     '
+         console.log(`${text} <br>`)
+         console.log(`${text.trim()} <br>`)
+         
+
+
+
+
+    </script>
+</body>
+</html>
